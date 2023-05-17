@@ -15,9 +15,13 @@ import java.util.List;
 public class LoadController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        //response.addHeader("X-Frame-Options", "DENY");
+        //response.addHeader("Content-Security-Policy", "frame-ancestors 'none'");
         response.setContentType("text/html");
         response.setCharacterEncoding("UTF-8");
         request.setCharacterEncoding("UTF-8");
+        //response.addHeader("X-Frame-Options", "DENY");
+        //response.addHeader("Content-Security-Policy", "frame-ancestors 'none'");
         String url;
         url = "/index.jsp";
         ProductDao productDao = new ProductDao();

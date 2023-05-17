@@ -16,6 +16,8 @@ import javax.servlet.http.HttpSession;
 public class VerifyCode extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        //response.addHeader("X-Frame-Options", "DENY");
+        //response.addHeader("Content-Security-Policy", "frame-ancestors 'none'");
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
 

@@ -17,6 +17,8 @@ public class UpdateProduct extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        //response.addHeader("X-Frame-Options", "DENY");
+        //response.addHeader("Content-Security-Policy", "frame-ancestors 'none'");
         String id = request.getParameter("id");
         ProductDao dao = new ProductDao();
         System.out.println(id);

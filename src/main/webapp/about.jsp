@@ -42,9 +42,9 @@
         <i class="fas fa-bars" id="menu-bars"></i>
         <i class="fas fa-search" id="search-icon"></i>
         <a href="" class="fas fa-heart"></a>
-        <a href="<c:url value = "/cart.jsp"/>" class="fas fa-shopping-cart"></a>
+        <a href="<c:url value = "/CartController"/>" class="fas fa-shopping-cart"></a>
         <a href="#" class="fas fa-user-plus"></a>
-        <a href="<c:url value = "/login.jsp"/>" class="fas fa-sign-in-alt"></a>
+        <a href="<c:url value = "/Login"/>" class="fas fa-sign-in-alt"></a>
 
     </div>
 
@@ -155,7 +155,7 @@
             (function(){
                 var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
                 s1.async=true;
-                s1.src='https://embed.tawk.to/61702f4c86aee40a5737897a/1fif3hgvu';
+                s1.src='https://embed.tawk.to/62af022cb0d10b6f3e781a12/1g5tq0vpr';
                 s1.charset='UTF-8';
                 s1.setAttribute('crossorigin','*');
                 s0.parentNode.insertBefore(s1,s0);

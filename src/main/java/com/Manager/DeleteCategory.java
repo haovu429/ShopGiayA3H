@@ -13,6 +13,8 @@ import java.io.IOException;
 public class DeleteCategory extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        //response.addHeader("X-Frame-Options", "DENY");
+        //response.addHeader("Content-Security-Policy", "frame-ancestors 'none'");
         Integer id = Integer.parseInt(request.getParameter("id"));
 //        System.out.println(id);
         CategoryDao categoryDao = new CategoryDao();

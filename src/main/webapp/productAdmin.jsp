@@ -174,13 +174,14 @@
     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-app.js";
 
     const firebaseConfig = {
-        apiKey: "AIzaSyAAb7hR7fD7_hjoo_aCB6uVyKiB4uI-Iz8",
-        authDomain: "web-servlet.firebaseapp.com",
-        databaseURL: "https://web-servlet-default-rtdb.firebaseio.com",
-        projectId: "web-servlet",
-        storageBucket: "web-servlet.appspot.com",
-        messagingSenderId: "770967001928",
-        appId: "1:770967001928:web:1b5b7a250e6d659b58717d"
+        apiKey: "AIzaSyCoTEyezp6GlXfg9L98VqZgVD8dJRPxLik",
+        authDomain: "temperatureapp-953b1.firebaseapp.com",
+        databaseURL: "https://temperatureapp-953b1-default-rtdb.firebaseio.com",
+        projectId: "temperatureapp-953b1",
+        storageBucket: "temperatureapp-953b1.appspot.com",
+        messagingSenderId: "874289549309",
+        appId: "1:874289549309:web:57a20f5ce9454d35205394",
+        measurementId: "G-XL1C72QFYK"
     };
 
     // Initialize Firebase

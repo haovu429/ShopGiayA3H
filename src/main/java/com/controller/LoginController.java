@@ -22,9 +22,13 @@ import java.util.List;
 @WebServlet(name = "LoginConTroller", urlPatterns = {"/Login", "/index"})
 public class LoginController extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+        //response.addHeader("X-Frame-Options", "DENY");
+        //response.addHeader("Content-Security-Policy", "frame-ancestors 'none'");
         response.setContentType("text/html");
         response.setCharacterEncoding("UTF-8");
         request.setCharacterEncoding("UTF-8");
+        ///response.addHeader("X-Frame-Options", "DENY");
+        //response.addHeader("Content-Security-Policy", "frame-ancestors 'none'");
 
         String userN = request.getParameter("userName");
         String passW = request.getParameter("passWord");
@@ -47,7 +51,7 @@ public class LoginController extends HttpServlet {
         else
         {
             request.setAttribute("signinFalse", true);
-            url = "/login.jsp";
+            url = "login.jsp";
             response.sendRedirect(url);
         }
     }

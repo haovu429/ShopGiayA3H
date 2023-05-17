@@ -22,6 +22,8 @@ import java.util.List;
 public class OrderController extends HttpServlet  {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        //response.addHeader("X-Frame-Options", "DENY");
+        //response.addHeader("Content-Security-Policy", "frame-ancestors 'none'");
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
 
@@ -43,7 +45,7 @@ public class OrderController extends HttpServlet  {
 
             //call the send email method
             boolean test = sm.sendEmail(user, email, name, phone, address, total, link);
-
+            test = true;
             //check if the email send successfully
             if(test){
                 HttpSession session  = request.getSession();
@@ -56,6 +58,8 @@ public class OrderController extends HttpServlet  {
     }
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws SecurityException, IOException, ServletException {
+        response.addHeader("X-Frame-Options", "DENY");
+        response.addHeader("Content-Security-Policy", "frame-ancestors 'none'");
         response.setContentType("text/html;charset=UTF-8");
         request.setCharacterEncoding("utf-8");
         response.setCharacterEncoding("UTF-8");

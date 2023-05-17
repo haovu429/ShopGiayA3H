@@ -14,6 +14,8 @@ import java.io.IOException;
 public class CartController extends HttpServlet {
     public void doPost(HttpServletRequest request, HttpServletResponse response)
         throws SecurityException, IOException{
+        //response.addHeader("X-Frame-Options", "DENY");
+        //response.addHeader("Content-Security-Policy", "frame-ancestors 'none'");
         String iAction = request.getParameter("action");
 
         if (iAction != null && !iAction.equals("")) {

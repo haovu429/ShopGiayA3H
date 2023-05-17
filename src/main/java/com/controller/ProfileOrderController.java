@@ -24,6 +24,8 @@ public class ProfileOrderController extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+       // response.addHeader("X-Frame-Options", "DENY");
+       // response.addHeader("Content-Security-Policy", "frame-ancestors 'none'");
         response.setContentType("text/html");
         response.setCharacterEncoding("UTF-8");
         request.setCharacterEncoding("UTF-8");

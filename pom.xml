@@ -10,6 +10,8 @@
     <name>ShopGiayMaster</name>
     <packaging>war</packaging>
 
+
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -79,5 +81,7 @@
                 <version>3.3.1</version>
             </plugin>
         </plugins>
+
+
     </build>
 </project>
